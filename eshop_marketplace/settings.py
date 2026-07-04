@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django_render_partial',
     # Internal Apps:
     'home_module',
+    'account_module',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,4 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+AUTH_USER_MODEL = 'account_module.User'
