@@ -1,3 +1,4 @@
+from django.core.validators import MaxValueValidator, RegexValidator
 from django.db import models
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 
@@ -43,13 +44,13 @@ class UserManager(BaseUserManager):
         return user
 
 
-
-
 # Create Custom User Model with AbstractUser
 class User(AbstractUser):
-    phone = models.CharField(max_length=11, unique=True, db_index=True, verbose_name='شماره تلفن همراه')
+    phone = models.CharField(max_length=11, unique=True, db_index=True,
+                             validators=[RegexValidator(r'^09\d{9}$', message="شماره تلفن معتبر نیست.")],
+                             verbose_name='شماره تلفن همراه')
     username = None
-    password = models.CharField(max_length=120, null=True, blank=True, verbose_name='گذرواژه')
+    password = models.CharField(max_length=512, null=True, blank=True, verbose_name='گذرواژه')
     first_name = models.CharField(max_length=20, null=True, blank=True, verbose_name='نام')
     last_name = models.CharField(max_length=30, null=True, blank=True, verbose_name='نام خانوادگی')
     email = models.EmailField(max_length=30, null=True, blank=True, db_index=True, unique=True, verbose_name='ایمیل')
@@ -65,7 +66,7 @@ class User(AbstractUser):
     objects = UserManager()
 
     USERNAME_FIELD = 'phone'
-    REQUIRED_FIELD = []
+    REQUIRED_FIELDS = []
 
     class Meta:
         ordering = ['-date_joined']
@@ -75,4 +76,25 @@ class User(AbstractUser):
     def __str__(self):
         if self.first_name and self.last_name:
             return self.first_name + ' ' + self.last_name
+        return self.phone
+
+
+class OTPRequest(models.Model):
+    phone = models.CharField(max_length=11, db_index=True,
+                             validators=[RegexValidator(r'^09\d{9}$', message="شماره تلفن معتبر نیست.")],
+                             verbose_name='شماره تلفن همراه')
+    otp_code = models.CharField(max_length=6,
+                                validators=[RegexValidator(r'^\d{6}$', message="کد تایید باید ۶ رقم باشد.")],
+                                verbose_name='کد موقت')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name='زمان ارسال')
+    wrong_attempts = models.PositiveSmallIntegerField(default=0, validators=[MaxValueValidator(3)],
+                                                      verbose_name='تعداد تلاش های اشتباه')
+    is_used = models.BooleanField(default=False, verbose_name='استفاده شده')
+
+    class Meta:
+        ordering = ['-created_at']
+        verbose_name = 'کد موقت'
+        verbose_name_plural = 'کدهای موقت'
+
+    def __str__(self):
         return self.phone
