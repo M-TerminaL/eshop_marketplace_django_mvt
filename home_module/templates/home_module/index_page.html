@@ -1,1 +1,2019 @@
 {% extends 'shared/_layout.html' %}
+
+{% block title %}
+	صفحه اصلی
+{% endblock %}
+
+{% block content %}
+
+    <!--============ start main slider ==============-->
+
+    <section class="main-slider">
+        <div class="container-fluid">
+            <div class="home-slider shadow-box">
+                <div class="slider__layer slider__layer--top"></div>
+                <div class="slider__layer slider__layer--bottom"></div>
+                <div class="swiper homeSlider" id="">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img alt="" class="img-fluid" src="/static/assets/image/slider/slider-1.gif">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img alt="" class="img-fluid" src="/static/assets/image/slider/slider-2.gif">
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img alt="" class="img-fluid" src="/static/assets/image/slider/slider-3.webp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next d-lg-flex d-none"></div>
+                    <div class="swiper-button-prev d-lg-flex d-none"></div>
+                    <div class="swiper-pagination-bg">
+                        <div>
+                            <svg fill="none" height="75" viewBox="0 0 231 75" width="231"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M0 0C31.5006 0.949537 50.52 17.872 56.1955 26.4544L55.986 25.8011L82.4924 58.631C99.3032 79.4521 131.038 79.4521 147.849 58.6309L174.356 25.8011L174.146 26.4544C179.822 17.872 198.844 0.949537 230.349 0H0Z"
+                                      fill="#FCFCFC"
+                                      fill-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============ end main slider ==============-->
+
+
+    <!--============ start shop feature ==============-->
+
+    <section class="shop-feature">
+        <div class="container-fluid">
+            <div class="shop-feature-parent">
+                <div class="row justify-content-center gy-4 gx-2 row-cols-1 row-cols-lg-5 row-cols-xl-5">
+                    <div class="col">
+                        <div class="shop-feature-item shadow-top">
+                            <img alt="" src="/static/assets/image/feature/box.png">
+                            <h5 class="mt-2">تحویل اکسپرس</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="shop-feature-item shadow-bottom">
+                            <img alt="" src="/static/assets/image/feature/headphone.png">
+                            <h5 class="mt-2"> پشتیبانی آنلاین</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="shop-feature-item shadow-top">
+                            <img alt="" src="/static/assets/image/feature/money.png">
+                            <h5 class="mt-2"> پرداخت در محل</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="shop-feature-item shadow-bottom">
+                            <img alt="" src="/static/assets/image/feature/safe.png">
+                            <h5 class="mt-2"> ضمانت کالا</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="shop-feature-item shadow-top">
+                            <img src="/static/assets/image/feature/seven.png" alt="">
+                            <h5 class="mt-2"> هفت روز ضمانت بازگشت</h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============ end shop feature ==============-->
+
+    <!--============ start category ==============-->
+
+    <section class="site-category py-20">
+        <div class="container-fluid">
+            <div class="section-title">
+                <h3 class="fw-bold text-center"><span class="main-color-one-color">دسته بندی</span> محصولات</h3>
+                <img src="/static/assets/image/category/line.png" class="line-image" alt="">
+            </div>
+
+            <div class="site-categories">
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-1.png" alt="">
+                                </div>
+                                <h6 class="text-center">هدفون</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-2.png" alt="">
+                                </div>
+                                <h6 class="text-center">فلش مموری</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-3.png" alt="">
+                                </div>
+                                <h6 class="text-center">مودم روتر</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-4.png" alt="">
+                                </div>
+                                <h6 class="text-center">دسته بازی</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-5.png" alt="">
+                                </div>
+                                <h6 class="text-center">وب کم</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-6.png" alt="">
+                                </div>
+                                <h6 class="text-center">ماوس</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-7.png" alt="">
+                                </div>
+                                <h6 class="text-center">انواع رم</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-8.png" alt="">
+                                </div>
+                                <h6 class="text-center">صفحه کلید</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-11.png" alt="">
+                                </div>
+                                <h6 class="text-center">انواع Cpu</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-9.png" alt="">
+                                </div>
+                                <h6 class="text-center">انواع کابل</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-6">
+                        <div class="site-category-items p-3 shadow-box rounded-3">
+                            <a href="">
+                                <div class="site-category-items-icon">
+                                    <img src="/static/assets/image/category/cat-10.png" alt="">
+                                </div>
+                                <h6 class="text-center">انواع کامپیوتر</h6>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--============ end category ==============-->
+
+
+    <!--============ start amazing slider ==============-->
+
+    <section class="amazing-slider site-slider">
+        <div class="container-fluid">
+            <div class="amazing-slider-parent">
+                <div class="swiper amazing">
+                    <div class="swiper-wrapper align-items-center">
+                        <div class="swiper-slide sw-title-image">
+                            <div class="d-flex justify-content-center mt-5 align-items-center flex-column">
+                                <h3 class="text-white">پیشنهاد</h3>
+                                <h3 class="text-white">شگفت انگیز</h3>
+                                <a href="" class="mt-2 btn btn-light rounded-pill btn-sm btn-amazing-sw"> مشاهده همه <i
+                                        class="bi bi-arrow-left-short"></i></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/television1.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image1.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image3.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image4.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image5.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image6.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/wach1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next d-lg-flex d-none"></div>
+                    <div class="swiper-button-prev d-lg-flex d-none"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============ end amazing slider ==============-->
+
+    <!--============ start banner section ==============-->
+
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="row gy-4">
+                <div class="col-md-6">
+                    <div class="banner-item running-top">
+                        <a href="">
+                            <img src="/static/assets/image/banner/banner-1.webp" class="w-100 rounded-3" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-item running-top">
+                        <a href="">
+                            <img src="/static/assets/image/banner/banner-2.webp" class="w-100 rounded-3" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============ end banner section ==============-->
+
+    <!--============ start product slider ==============-->
+
+    <section class="product-slider  site-slider">
+        <div class="container-fluid">
+            <div class="slider-title">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="slider-title-desc">
+                            <div class="slider-title-title">
+                                <h2 class="h3">محصولات <span class="main-color-one-color fw-bold">ویژه سایت</span></h2>
+                                <p class="mb-0 mt-2 h6 text-muted">جدیدترین محصولات تخفیف خورده را اینجا میتوانید اینجا
+                                    ببینید</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="slider-title-link">
+                            <a href="" class="main-color-one-color font-16"> مشاهده همه <i
+                                    class="bi bi-caret-left-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper pro-slider">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide">
+                        <div class="product-box-item border-ui bg-white">
+                            <div class="hover">
+                                <div class="hover-btn">
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                </div>
+                                <div class="hover-color">
+                                    <span style="background-color: #10b663;"></span>
+                                    <span style="background-color: #e2350a;"></span>
+                                    <span style="background-color: #fafafa;"></span>
+                                </div>
+                            </div>
+                            <a href="">
+                                <div class="image text-center">
+                                    <img src="/static/assets/image/product/television1.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="desc">
+                                    <div class="title">
+                                        <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                            ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                        </h6>
+                                    </div>
+                                    <div class="foot d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="add" data-hint="افزودن به سبد خرید">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                     fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                        <div class="price d-flex flex-column justify-content-end">
+                                            <div>
+                                                <span class="fw-bold font-18 def-color">299,000</span>
+                                                <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                <span class="text-muted font-14 ms-2">تومان</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box-item border-ui bg-white">
+                            <div class="hover">
+                                <div class="hover-btn">
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                </div>
+                                <div class="hover-color">
+                                    <span style="background-color: #10b663;"></span>
+                                    <span style="background-color: #e2350a;"></span>
+                                    <span style="background-color: #fafafa;"></span>
+                                </div>
+                            </div>
+                            <a href="">
+                                <div class="image text-center">
+                                    <img src="/static/assets/image/product/product-image1.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="desc">
+                                    <div class="title">
+                                        <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                            ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                        </h6>
+                                    </div>
+                                    <div class="foot d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="add" data-hint="افزودن به سبد خرید">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                     fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                        <div class="price d-flex flex-column justify-content-end">
+                                            <div>
+                                                <span class="fw-bold font-18 def-color">299,000</span>
+                                                <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                <span class="text-muted font-14 ms-2">تومان</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box-item border-ui bg-white">
+                            <div class="hover">
+                                <div class="hover-btn">
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                </div>
+                                <div class="hover-color">
+                                    <span style="background-color: #10b663;"></span>
+                                    <span style="background-color: #e2350a;"></span>
+                                    <span style="background-color: #fafafa;"></span>
+                                </div>
+                            </div>
+                            <a href="">
+                                <div class="image text-center">
+                                    <img src="/static/assets/image/product/product-image3.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="desc">
+                                    <div class="title">
+                                        <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                            ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                        </h6>
+                                    </div>
+                                    <div class="foot d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="add" data-hint="افزودن به سبد خرید">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                     fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                        <div class="price d-flex flex-column justify-content-end">
+                                            <div>
+                                                <span class="fw-bold font-18 def-color">299,000</span>
+                                                <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                <span class="text-muted font-14 ms-2">تومان</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box-item border-ui bg-white">
+                            <div class="hover">
+                                <div class="hover-btn">
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                </div>
+                                <div class="hover-color">
+                                    <span style="background-color: #10b663;"></span>
+                                    <span style="background-color: #e2350a;"></span>
+                                    <span style="background-color: #fafafa;"></span>
+                                </div>
+                            </div>
+                            <a href="">
+                                <div class="image text-center">
+                                    <img src="/static/assets/image/product/product-image4.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="desc">
+                                    <div class="title">
+                                        <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                            ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                        </h6>
+                                    </div>
+                                    <div class="foot d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="add" data-hint="افزودن به سبد خرید">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                     fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                        <div class="price d-flex flex-column justify-content-end">
+                                            <div>
+                                                <span class="fw-bold font-18 def-color">299,000</span>
+                                                <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                <span class="text-muted font-14 ms-2">تومان</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box-item border-ui bg-white">
+                            <div class="hover">
+                                <div class="hover-btn">
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                </div>
+                                <div class="hover-color">
+                                    <span style="background-color: #10b663;"></span>
+                                    <span style="background-color: #e2350a;"></span>
+                                    <span style="background-color: #fafafa;"></span>
+                                </div>
+                            </div>
+                            <a href="">
+                                <div class="image text-center">
+                                    <img src="/static/assets/image/product/product-image5.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="desc">
+                                    <div class="title">
+                                        <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                            ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                        </h6>
+                                    </div>
+                                    <div class="foot d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="add" data-hint="افزودن به سبد خرید">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                     fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                        <div class="price d-flex flex-column justify-content-end">
+                                            <div>
+                                                <span class="fw-bold font-18 def-color">299,000</span>
+                                                <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                <span class="text-muted font-14 ms-2">تومان</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box-item border-ui bg-white">
+                            <div class="hover">
+                                <div class="hover-btn">
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                </div>
+                                <div class="hover-color">
+                                    <span style="background-color: #10b663;"></span>
+                                    <span style="background-color: #e2350a;"></span>
+                                    <span style="background-color: #fafafa;"></span>
+                                </div>
+                            </div>
+                            <a href="">
+                                <div class="image text-center">
+                                    <img src="/static/assets/image/product/product-image6.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="desc">
+                                    <div class="title">
+                                        <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                            ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                        </h6>
+                                    </div>
+                                    <div class="foot d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="add" data-hint="افزودن به سبد خرید">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                     fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                        <div class="price d-flex flex-column justify-content-end">
+                                            <div>
+                                                <span class="fw-bold font-18 def-color">299,000</span>
+                                                <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                <span class="text-muted font-14 ms-2">تومان</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-box-item border-ui bg-white">
+                            <div class="hover">
+                                <div class="hover-btn">
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                    <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                       data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                </div>
+                                <div class="hover-color">
+                                    <span style="background-color: #10b663;"></span>
+                                    <span style="background-color: #e2350a;"></span>
+                                    <span style="background-color: #fafafa;"></span>
+                                </div>
+                            </div>
+                            <a href="">
+                                <div class="image text-center">
+                                    <img src="/static/assets/image/product/wach1.jpg" alt="" class="img-fluid">
+                                </div>
+                                <div class="desc">
+                                    <div class="title">
+                                        <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                            ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                        </h6>
+                                    </div>
+                                    <div class="foot d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <div class="add" data-hint="افزودن به سبد خرید">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                     fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                    <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                </svg>
+                                            </div>
+
+                                        </div>
+                                        <div class="price d-flex flex-column justify-content-end">
+                                            <div>
+                                                <span class="fw-bold font-18 def-color">299,000</span>
+                                                <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                            </div>
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                <span class="text-muted font-14 ms-2">تومان</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--============ end product slider ==============-->
+
+    <!--============ start banner section ==============-->
+
+    <section class="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-item running-top">
+                        <a href="">
+                            <img src="/static/assets/image/banner/banner-4.webp" class="w-100 rounded-3" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============ end banner section ==============-->
+
+    <!--============ start amazing section ==============-->
+
+    <section class="product-boxs site-slider">
+        <div class="container-fluid">
+            <div class="slider-title mb-5">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="slider-title-desc">
+                            <div class="slider-title-title">
+                                <h2 class="h3">محصولات <span class="main-color-one-color title-font">ویژه سایت</span>
+                                </h2>
+                                <p class="mb-0 mt-2 h6 text-muted">جدیدترین محصولات تخفیف خورده را اینجا میتوانید اینجا
+                                    ببینید</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="slider-title-link">
+                            <a href="" class="main-color-one-color font-16"> مشاهده همه <i
+                                    class="bi bi-caret-left-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-parent">
+                <div class="swiper" id="product-slider">
+                    <div class="swiper-wrapper ">
+                        <div class="swiper-slide">
+                            <div class="product-box-item w-100 border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image1.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item w-100 border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image3.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item w-100 border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image4.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item w-100 border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image5.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item w-100 border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/product-image6.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product-box-item w-100 border-ui bg-white">
+                                <div class="hover">
+                                    <div class="hover-btn">
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="مقایسه محصول"><i class="bi bi-arrow-left-right"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="افزودن به علاقه مندی"><i class="bi bi-heart"></i></a>
+                                        <a href="" data-bs-toggle="tooltip" data-bs-placement="left"
+                                           data-bs-title="نمایش سریع"><i class="bi bi-eye"></i></a>
+                                    </div>
+                                    <div class="hover-color">
+                                        <span style="background-color: #10b663;"></span>
+                                        <span style="background-color: #e2350a;"></span>
+                                        <span style="background-color: #fafafa;"></span>
+                                    </div>
+                                </div>
+                                <a href="">
+                                    <div class="image text-center">
+                                        <img src="/static/assets/image/product/wach1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="desc">
+                                        <div class="title">
+                                            <h6 class="title-fa def-color fw-bold text-overflow-2">
+                                                ساعت هوشمند سامسونگ مدل Galaxy Watch3 SM-R840 45mm بند چرمی
+                                            </h6>
+                                        </div>
+                                        <div class="foot d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <div class="add" data-hint="افزودن به سبد خرید">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                         fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"></path>
+                                                    </svg>
+                                                </div>
+
+                                            </div>
+                                            <div class="price d-flex flex-column justify-content-end">
+                                                <div>
+                                                    <span class="fw-bold font-18 def-color">299,000</span>
+                                                    <span class="badge main-color-two-bg rounded-pill">25%</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center align-items-center">
+                                                    <span class="text-muted font-14 text-decoration-line-through">150,000</span>
+                                                    <span class="text-muted font-14 ms-2">تومان</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="amazing-offer-btn" data-scroll-to="#banners"></button>
+            </div>
+        </div>
+    </section>
+
+    <!--============ start amazing section ==============-->
+
+
+
+    <!--============ start product row ==============-->
+
+    <section class="products-row py-20">
+        <div class="container-fluid">
+            <div class="slider-title">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="slider-title-desc">
+                            <div class="slider-title-title">
+                                <h2 class="h3">محصولات <span class="main-color-one-color fw-bold">تازه وارد</span></h2>
+                                <p class="mb-0 mt-2 h6 text-muted">جدیدترین محصولات تخفیف خورده را اینجا میتوانید اینجا
+                                    ببینید</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="slider-title-link">
+                            <a href="" class="main-color-one-color font-16"> مشاهده همه <i
+                                    class="bi bi-caret-left-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="parent bg-white p-3 shadow-box rounded-3 mt-4">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/laptop-1.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">1</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/laptop-2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">2</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/laptop-3.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">3</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/laptop-4.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">4</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/laptop-5.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">5</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/product-image1.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">6</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/product-image2.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">7</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/wach2.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">8</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/wach3.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">9</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/wach4.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">10</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/television3.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">11</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="item bg-white p-2">
+                            <div class="row gy-2 align-items-center">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="/static/assets/image/product/television1.jpg" alt=""
+                                             class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="d-flex align-items-center">
+                                        <div class="number me-2">
+                                            <h4 class="font-22 main-color-one-color">12</h4>
+                                        </div>
+                                        <a href="">
+                                            <div class="title">
+                                                <h6 class="font-14 text-overflow-2">لپ تاپ 14.2
+                                                    اینچی اپل مدل 2021 MacBook MKGR3 M1 Pro</h6>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============ end product row ==============-->
+
+    <!--============ start section blog slider ==============-->
+
+    <section class="blog-slider py-20">
+        <div class="container-fluid">
+            <div class="slider-title">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="slider-title-desc">
+                            <div class="slider-title-title">
+                                <h2 class="h3">آخرین مطالب <span class="main-color-one-color fw-bold">وبلاگ</span></h2>
+                                <p class="mb-0 mt-2 h6 text-muted">آخرین مطالب وبلاگ را اینجا میتوانید ببینید</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="slider-title-link">
+                            <a href="" class="main-color-one-color font-16"> مشاهده همه <i
+                                    class="bi bi-caret-left-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-slider-items mt-3">
+                <div class="swiper blog-slider-sw">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="blog-slider-item-stand border-ui">
+                                <a href="">
+                                    <span class="blog-slider-overlay"></span>
+                                    <div class="blog-slider-item-stand-image">
+                                        <img src="/static/assets/image/blog/blog-1.jpg" alt="">
+                                    </div>
+                                    <div class="blog-slider-item-stand-text">
+                                        <div class="blog-slider-item-stand-title">
+                                            <span class="badge badge-pill main-color-two-bg mb-2">جدید ترین ها</span>
+                                            <h6 class="font-16 title-font text-overflow-1">راهنمای خرید موبایل آبان
+                                                1402</h6>
+                                            <div class="blog-slider-item-info d-flex align-items-center justify-content-between">
+                                                <div class="blog-slider-item-info-item me-2">
+                                                    <i class="bi bi-clock me-1"></i>
+                                                    <span>2 روز پیش نوشته شده</span>
+                                                </div>
+                                                <div class="blog-slider-item-info-item">
+                                                    <i class="bi bi-eye me-1"></i>
+                                                    <span>17 بازدید</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-slider-item-stand border-ui">
+                                <a href="">
+                                    <span class="blog-slider-overlay"></span>
+                                    <div class="blog-slider-item-stand-image">
+                                        <img src="/static/assets/image/blog/blog-2.jpg" alt="">
+                                    </div>
+                                    <div class="blog-slider-item-stand-text">
+                                        <div class="blog-slider-item-stand-title">
+                                            <span class="badge badge-pill main-color-two-bg mb-2">جدید ترین ها</span>
+                                            <h6 class="font-16 title-font text-overflow-1">راهنمای خرید موبایل آبان
+                                                1402</h6>
+                                            <div class="blog-slider-item-info d-flex align-items-center justify-content-between">
+                                                <div class="blog-slider-item-info-item me-2">
+                                                    <i class="bi bi-clock me-1"></i>
+                                                    <span>2 روز پیش نوشته شده</span>
+                                                </div>
+                                                <div class="blog-slider-item-info-item">
+                                                    <i class="bi bi-eye me-1"></i>
+                                                    <span>17 بازدید</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-slider-item-stand border-ui">
+                                <a href="">
+                                    <span class="blog-slider-overlay"></span>
+                                    <div class="blog-slider-item-stand-image">
+                                        <img src="/static/assets/image/blog/blog-3.jpg" alt="">
+                                    </div>
+                                    <div class="blog-slider-item-stand-text">
+                                        <div class="blog-slider-item-stand-title">
+                                            <span class="badge badge-pill main-color-two-bg mb-2">جدید ترین ها</span>
+                                            <h6 class="font-16 title-font text-overflow-1">راهنمای خرید موبایل آبان
+                                                1402</h6>
+                                            <div class="blog-slider-item-info d-flex align-items-center justify-content-between">
+                                                <div class="blog-slider-item-info-item me-2">
+                                                    <i class="bi bi-clock me-1"></i>
+                                                    <span>2 روز پیش نوشته شده</span>
+                                                </div>
+                                                <div class="blog-slider-item-info-item">
+                                                    <i class="bi bi-eye me-1"></i>
+                                                    <span>17 بازدید</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-slider-item-stand border-ui">
+                                <a href="">
+                                    <span class="blog-slider-overlay"></span>
+                                    <div class="blog-slider-item-stand-image">
+                                        <img src="/static/assets/image/blog/blog-4.jpg" alt="">
+                                    </div>
+                                    <div class="blog-slider-item-stand-text">
+                                        <div class="blog-slider-item-stand-title">
+                                            <span class="badge badge-pill main-color-two-bg mb-2">جدید ترین ها</span>
+                                            <h6 class="font-16 title-font text-overflow-1">راهنمای خرید موبایل آبان
+                                                1402</h6>
+                                            <div class="blog-slider-item-info d-flex align-items-center justify-content-between">
+                                                <div class="blog-slider-item-info-item me-2">
+                                                    <i class="bi bi-clock me-1"></i>
+                                                    <span>2 روز پیش نوشته شده</span>
+                                                </div>
+                                                <div class="blog-slider-item-info-item">
+                                                    <i class="bi bi-eye me-1"></i>
+                                                    <span>17 بازدید</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-slider-item-stand border-ui">
+                                <a href="">
+                                    <span class="blog-slider-overlay"></span>
+                                    <div class="blog-slider-item-stand-image">
+                                        <img src="/static/assets/image/blog/blog-5.jpg" alt="">
+                                    </div>
+                                    <div class="blog-slider-item-stand-text">
+                                        <div class="blog-slider-item-stand-title">
+                                            <span class="badge badge-pill main-color-two-bg mb-2">جدید ترین ها</span>
+                                            <h6 class="font-16 title-font text-overflow-1">راهنمای خرید موبایل آبان
+                                                1402</h6>
+                                            <div class="blog-slider-item-info d-flex align-items-center justify-content-between">
+                                                <div class="blog-slider-item-info-item me-2">
+                                                    <i class="bi bi-clock me-1"></i>
+                                                    <span>2 روز پیش نوشته شده</span>
+                                                </div>
+                                                <div class="blog-slider-item-info-item">
+                                                    <i class="bi bi-eye me-1"></i>
+                                                    <span>17 بازدید</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="blog-slider-item-stand border-ui">
+                                <a href="">
+                                    <span class="blog-slider-overlay"></span>
+                                    <div class="blog-slider-item-stand-image">
+                                        <img src="/static/assets/image/blog/blog-6.jpg" alt="">
+                                    </div>
+                                    <div class="blog-slider-item-stand-text">
+                                        <div class="blog-slider-item-stand-title">
+                                            <span class="badge badge-pill main-color-two-bg mb-2">جدید ترین ها</span>
+                                            <h6 class="font-16 title-font text-overflow-1">راهنمای خرید موبایل آبان
+                                                1402</h6>
+                                            <div class="blog-slider-item-info d-flex align-items-center justify-content-between">
+                                                <div class="blog-slider-item-info-item me-2">
+                                                    <i class="bi bi-clock me-1"></i>
+                                                    <span>2 روز پیش نوشته شده</span>
+                                                </div>
+                                                <div class="blog-slider-item-info-item">
+                                                    <i class="bi bi-eye me-1"></i>
+                                                    <span>17 بازدید</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============ end section blog slider ==============-->
+
+    <!--============ start application ==============-->
+
+    <section class="shopping-app">
+        <div class="container-fluid">
+            <div class="content-box">
+                <div class="container-fluid">
+                    <div class="shopping-app-parent">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                                <div class="shopping-app-image">
+                                    <img src="/static/assets/image/application/man-with-orange-jacket-is-texting-his-phone_176841-44473-removebg-preview-1-1.png"
+                                         alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <h4 class="fw-bold h4 shopping-app-title">دریافت <span class="main-color-two-color">اپلیکیشن</span>
+                                </h4>
+                                <p class="text-muted mt-2">
+                                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
+                                    برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی
+                                    می باشد.
+                                </p>
+                                <div class="d-flex shopping-app-link mt-3">
+                                    <a href="" class="btn main-color-one-bg">دریافت از بازار</a>
+                                    <a href="" class="btn ms-2 main-color-two-bg">دریافت مستقیم</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="shopping-app-qr">
+                                    <img src="/static/assets/image/application/qr.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--============ end application ==============-->
+
+
+{% endblock %}
