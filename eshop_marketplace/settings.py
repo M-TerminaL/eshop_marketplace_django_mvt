@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # External Apps:
     'django_render_partial',
+    'jalali_date',
     # Internal Apps:
     'home_module',
     'account_module',
@@ -129,3 +130,24 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
 AUTH_USER_MODEL = 'account_module.User'
+
+
+# default settings (optional)
+JALALI_DATE_DEFAULTS = {
+   # if change it to true then all dates of the list_display will convert to the Jalali.
+   'LIST_DISPLAY_AUTO_CONVERT': False,
+   'Strftime': {
+        'date': '%y/%m/%d',
+        'datetime': '%H:%M:%S _ %y/%m/%d',
+    },
+    'Static': {
+        'js': [
+            'admin/js/django_jalali.min.js',
+        ],
+        'css': {
+            'all': [
+              'admin/css/django_jalali.min.css',
+            ]
+        }
+    },
+}

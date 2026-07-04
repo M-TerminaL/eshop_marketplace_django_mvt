@@ -56,9 +56,11 @@ class User(AbstractUser):
     date_joined = models.DateTimeField(auto_now_add=True, verbose_name='تاریخ عضویت')
     last_login = models.DateTimeField(auto_now=True, verbose_name='آخرین لاگین')
     is_active = models.BooleanField(default=False, verbose_name='فعال / غیرفعال')
-    is_blocked = models.BooleanField(default=False, verbose_name='بلاک شده / نشده')
+    is_staff = models.BooleanField(default=False, verbose_name='کارمند')
+    is_superuser = models.BooleanField(default=False, verbose_name='ابرکابر / مدیرفروشگاه')
     is_customer = models.BooleanField(default=True, verbose_name='مشتری')
     is_seller = models.BooleanField(default=False, verbose_name='فروشنده')
+    is_blocked = models.BooleanField(default=False, verbose_name='بلاک شده / نشده')
 
     objects = UserManager()
 
