@@ -1,7 +1,9 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from . import models
-from jalali_date import datetime2jalali, date2jalali
+from jalali_date import datetime2jalali
+
+
 # Register your models here.
 
 @admin.register(models.User)
@@ -32,3 +34,14 @@ class UserAdmin(UserAdmin):
     def get_last_login_jalali(self, obj):
         return datetime2jalali(obj.last_login).strftime('%a, %d %b %Y %H:%M:%S')
 
+
+@admin.register(models.OTPRequest)
+class OTPRequestAdmin(admin.ModelAdmin):
+    list_display = ['phone', 'otp_code', 'get_created_jalali', 'wrong_attempts', 'is_used']
+    list_filter = ['wrong_attempts', 'is_used']
+    list_editable = ['is_used']
+    search_fields = ['phone']
+
+    @admin.display(description='زمان ارسال', ordering='created_at')
+    def get_created_jalali(self, obj):
+        return datetime2jalali(obj.created_at).strftime('%a, %d %b %Y %H:%M:%S')
